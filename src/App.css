@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+.dark {
+  background-color: #111827;
+  color: white;
+}
+
+
+@layer components {
+    .btn-primary {
+      border-radius: calc(infinity * 1px) !important;
+      background-color: var(--color-indigo-500) !important;
+      padding-inline: --spacing(5);
+      padding-block: --spacing(2);
+      color: black;
+      box-shadow: var(--shadow-md);
+      &:hover {
+        @media (hover: hover) {
+          background-color: var(--color-indigo-700) !important;
+        }
+      }
+    }
+  }
